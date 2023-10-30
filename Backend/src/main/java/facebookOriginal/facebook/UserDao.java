@@ -1,0 +1,17 @@
+package facebookOriginal.facebook;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface UserDao {
+    List<User> selectAllUsers();
+    Optional<User> selectUserById(Integer id);
+    void insertUser(User user);
+    boolean existsUserWithEmail(String email);
+    boolean existsUserById(Integer id);
+    void deleteUserById(Integer userId);
+    void updateUser(User update);
+
+
+
+}
